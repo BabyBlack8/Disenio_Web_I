@@ -1,0 +1,143 @@
+body {
+            background-color: #e9edf2;
+            font-family: Arial, sans-serif;
+            color: #343a40;
+        }
+
+        .hoja {
+            max-width: 1000px;
+            margin: 40px auto;
+            background: white;
+            border-radius: 12px;
+            overflow: hidden;
+            box-shadow: 0 5px 25px rgba(0,0,0,0.12);
+        }
+
+        .lateral {
+            background-color: #172b3a;
+            color: white;
+            padding: 35px 25px;
+        }
+
+        .principal {
+            padding: 40px 35px;
+        }
+
+        .foto {
+            width: 180px;
+            height: 180px;
+            border-radius: 50%;
+            object-fit: cover;
+            border: 4px solid white;
+            margin-bottom: 20px;
+        }
+
+        .nombre {
+            font-size: 30px;
+            font-weight: bold;
+            color: #172b3a;
+        }
+
+        .profesion {
+            color: #168aad;
+            font-size: 17px;
+            font-weight: bold;
+        }
+
+        .titulo-seccion {
+            color: #168aad;
+            font-size: 19px;
+            font-weight: bold;
+            border-bottom: 2px solid #168aad;
+            padding-bottom: 8px;
+            margin-top: 25px;
+            margin-bottom: 15px;
+        }
+
+        .titulo-lateral {
+            color: #63c5da;
+            font-size: 17px;
+            font-weight: bold;
+            border-bottom: 1px solid #496477;
+            padding-bottom: 8px;
+            margin-top: 30px;
+        }
+
+        .texto-lateral {
+            font-size: 14px;
+            margin-bottom: 10px;
+        }
+
+        .experiencia {
+            border-left: 3px solid #168aad;
+            padding-left: 15px;
+            margin-bottom: 22px;
+        }
+
+    
+        .fecha {
+            color: #168aad;
+            font-size: 13px;
+            font-weight: bold;
+        }
+
+        .habilidad {
+            background-color: #e5f3f7;
+            color: #126782;
+            padding: 7px 12px;
+            border-radius: 5px;
+            display: inline-block;
+            margin: 4px;
+            font-size: 13px;
+        }
+
+        .lateral .habilidad {
+            background-color: #294456;
+            color: white;
+        }
+
+        .botones {
+            text-align: center;
+            margin: 25px;
+        }
+
+        @media print {
+
+            body {
+                background: white;
+            }
+
+            .hoja {
+                margin: 0;
+                max-width: 100%;
+                box-shadow: none;
+                border-radius: 0;
+            }
+
+            .botones {
+                display: none;
+            }
+
+            @page {
+                size: A4;
+                margin: 8mm;
+            }
+
+            .principal, .lateral {
+                -webkit-print-color-adjust: exact;
+                print-color-adjust: exact;
+            }
+
+        }
+
+        @media (max-width: 768px) {
+
+            .principal {
+                padding: 25px 20px;
+            }
+
+            .lateral {
+                text-align: center;
+            }
+
+        }
